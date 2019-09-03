@@ -1,5 +1,8 @@
 // VARIABLES
-$bodybackground: coral; 
+$bodybackground: skyblue; 
+
+// IMPORT PARTIALS
+@import 'partials/toc';
 
 body {
     background-color: $bodybackground;
