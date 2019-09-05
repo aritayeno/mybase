@@ -1,9 +1,11 @@
 // VARIABLES
-$bodybackground: skyblue; 
+$body-fontfamily:'laca', Helvetica, sans-serif;
+$heading-fontfamily:'laca-black', Helvetica, sans-serif;
+
+$color-accent: red;
+$color-midgrey: rgba(0,0,0,.5);
 
 // IMPORT PARTIALS
 @import 'partials/toc';
+@import 'partials/typography';
 
-body {
-    background-color: $bodybackground;
-} 
