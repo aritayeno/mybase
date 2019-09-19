@@ -9,5 +9,6 @@ $color-midgrey: rgba(0,0,0,.5);
 // IMPORT PARTIALS
 @import 'partials/toc';
 @import 'partials/typography';
-@import 'partials/buttons'
-
+@import 'partials/buttons';
+@import "partials/media";  
+@import "partials/layout";  
