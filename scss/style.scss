@@ -1,6 +1,7 @@
 // VARIABLES
 $body-fontfamily:'laca', Helvetica, sans-serif;
 $heading-fontfamily:'laca-black', Helvetica, sans-serif;
+$type-linewidth: 38em;
 
 $color-accent: red;
 $color-midgrey: rgba(0,0,0,.5);
@@ -8,4 +9,5 @@ $color-midgrey: rgba(0,0,0,.5);
 // IMPORT PARTIALS
 @import 'partials/toc';
 @import 'partials/typography';
+@import 'partials/buttons'
 
