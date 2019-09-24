@@ -10,13 +10,14 @@ CSS TABLE OF CONTENTS
 -------------------*/
 /* BODY */
 body {
-  font-family: 'laca', Helvetica, sans-serif;
+  font-family: "acumin-pro", Helvetica, arial, sans-serif;
   font-size: 100%;
-  line-height: 1.4; }
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.85); }
 
-/* HEADINGS */
+/* HEADINGs */
 h1, h2, h3 {
-  font-family: "laca-black", Helvetica, sans-serif;
+  font-family: "kepler-std", georgia, serif;
   margin: .5em 0;
   font-weight: 400; }
 
@@ -35,113 +36,120 @@ h3 {
 p {
   max-width: 35em; }
 
-/* TYPE SPECIMENT */
+/* LINKS */
+a {
+  color: #069; }
+
+a:hover {
+  color: #035; }
+
+/* HORIZONTAL RULE */
+hr {
+  border: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.15);
+  margin: 3em 0; }
+
+/* TYPE SPECIMEN */
 .mainhead {
   font-size: 6em;
-  color: #c6538c; }
+  color: #ff9900;
+  margin-bottom: 0; }
 
 .subhead {
-  font-family: "laca", Helvetica, sans-serif;
+  font-family: "acumin-pro", Helvetica, arial, sans-serif;
   color: rgba(0, 0, 0, 0.5);
-  margin-bottom: 1.2; }
+  margin-bottom: 1em; }
 
 /* BUTTONS */
-button {
-  font-size: inherit; }
-
 button,
-a.button {
+.button {
+  font-size: inherit;
+  font-family: "acumin-pro", Helvetica, arial, sans-serif;
+  line-height: 1;
+  background-color: #069;
+  color: #fff;
+  padding: 1em 2em;
   display: inline-block;
-  background-color: #036;
-  border: 1px solid #036;
-  color: #fff;
-  padding: 0.75em 1em;
-  border-radius: 0.3em;
-  margin: 0.5em 0;
-  border: none;
-  cursor: pointer;
-  line-height: 1em;
-  text-decoration: none; }
+  margin: .5em;
+  border-radius: 2em;
+  border: 1px solid #069;
+  cursor: pointer; }
+  button:hover,
+  .button:hover {
+    background-color: #035;
+    color: #fff;
+    border-color: #035; }
+  button.alt,
+  .button.alt {
+    color: #035;
+    background-color: #fff; }
+    button.alt:hover,
+    .button.alt:hover {
+      background-color: #035;
+      color: #fff;
+      border-color: #035; }
 
-button.alt,
-a.button.alt {
-  background-color: rgba(255, 255, 255, 0);
-  border: 1px solid #036;
-  color: #036; }
-
-button:hover,
-a.button:hover {
-  background-color: #003;
-  color: #fff;
-  border-color: #003;
-  text-decoration: none; }
-
-/* MEDIA  */
 /* Responsive Images */
 img {
   max-width: 100%;
   height: auto; }
 
-/* LAYOUT */
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-/*
-  #MEDIA QUERIES (Mobile First)
-      #DEFAULT+ (Mobile First - Default Settings in the CSS Above)
-      #SMALL- (Mobile Only Overrides) - max-width: 767px
-      #MEDIUM+ (Tablet) - min-width: 768px
-      #LARGE+ (Desktop) - min-width: 1050px
-      #EXTRALARGE+ (Desktop+) - min-width: 1250px  */
-/* SMALL+ (Mobile First Defaults) */
 body {
-  margin: 0;
-  padding: 0; }
+  font-size: 87.5%;
+  margin: 0; }
 
 .container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 4%; }
+  padding: 0 4%;
+  margin: 0 auto; }
 
-/* SMALL ONLY (e.g. for mobile overrides) */
-@media (max-width: 767px) {
-  /* SMALL BODY TYPE ON SMALL SCREEENS ONLY */
+@media (min-width: 768px) {
   body {
-    font-size: 88.75%;
-    /* 14px; */ } }
+    font-size: 100%; } }
 
-/* #MEDIUM+ */
-/* #LARGE+  */
 @media (min-width: 1050px) {
-  /* FIXED WIDTH CONTAINER AT MEDIUM SIZE FOR LARGE SCREENS */
   .container {
-    width: 1000px;
-    padding: 0 50px; } }
+    max-width: 1050px; } }
 
-/* #EXTRA-LARGE+ */
-@media (min-width: 1250px) {
-  /* EXTRA-LARGE BODY TYPE ON EXTRA-LARGE SCREEN */
+@media (min-width: 1050px) {
   body {
-    font-size: 112.5%;
-    /* 18px; */ }
-  /* FIXED WIDTH CONTAINER AT LARGER SIZE FOR EXTRA-LARGE SCREENS */
+    font-size: 112.5%; }
   .container {
-    width: 1200px; } }
+    max-width: 1050px; } }
 
+/* Grid */
 .row .column {
   margin-bottom: 2%; }
 
 @media (min-width: 768px) {
   .row {
-    display: -ms-grid;
-    display: grid; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: -1%;
+    margin-right: -1%; }
     .row .column {
-      margin: 1%; } }
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      margin: 1%; }
+      .row .column.one-half {
+        width: 50%; }
+      .row .column.one-third {
+        width: 33.3333%; }
+      .row .column.two-thirds {
+        width: 66.6666%; }
+      .row .column.one-fourth {
+        width: 50%; } }
 
-.row.demo {
-  background: yellow; }
-  .row.demo .column {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 1em;
-    text-align: center; }
+.row.demo .column {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  text-align: center; }

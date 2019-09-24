@@ -1,13 +1,16 @@
 /* BODY */
+
 body {
-    font-family: 'laca', Helvetica, sans-serif;
+    font-family: $body-fontfamily;
     font-size: 100%;
     line-height: 1.4;
+    color: $color-text-body;
 }
 
-/* HEADINGS */
+/* HEADINGs */
+
 h1, h2, h3 {
-    font-family: $type-heading;
+    font-family: $heading-fontfamily;
     margin: .5em 0;
     font-weight: 400;
 }
@@ -26,17 +29,34 @@ h3 {
 }
 
 p {
-    max-width: 35em;
+    max-width: 35em; 
 }
 
-/* TYPE SPECIMENT */
+
+/* LINKS */
+a { color: $color-links;}
+a:hover { color: $color-links-dark;}
+
+
+/* HORIZONTAL RULE */
+hr {
+    border: 0;
+    height: 1px;
+    background: rgba(0,0,0,.15);
+    margin: 3em 0;
+  }
+
+
+/* TYPE SPECIMEN */
+
 .mainhead {
     font-size: 6em;
-    color: $accent-color;
+    color: $color-accent;
+    margin-bottom: 0;
 }
 
 .subhead {
-    font-family: $type-base;
-    color: $type-color-lightgrey;
-    margin-bottom: 1.2;
+    font-family: $body-fontfamily;
+    color: $color-midgrey;
+    margin-bottom: 1em;
 }
