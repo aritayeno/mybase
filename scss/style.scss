@@ -1,13 +1,16 @@
 // VARIABLES
 $body-fontfamily: 'acumin-pro', Helvetica, arial, sans-serif;
 $heading-fontfamily: 'kepler-std', georgia, serif;
+// can name the tages (&body-fontfamily, etc) to whatever, i.g $sanserif-fontfamily
 
 // COLORS
 $color-text-body: rgba(0,0,0,.85);
-$color-accent: rgba(255,153,0,1);
 $color-midgrey: rgba(0,0,0,.5);
 $color-links: #069;
 $color-links-dark: #035;  
+
+$color-accent: rgba(172,104,2,1);
+$color-hero-bg: rgba(172,104,2,.2);
 
 // BREAKPOINTS
 $breakpoint-small: 768px;
@@ -21,3 +24,4 @@ $breakpoint-large: 1250px;
 @import 'partials/media';    
 @import 'partials/layout';    
 @import 'partials/grid';
+@import 'partials/structure';

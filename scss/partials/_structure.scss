@@ -1,0 +1,59 @@
+// site header and footer
+.site-header .site-footer {
+    background-color: $color-accent;
+    padding: 1em;
+    color: #fff;
+    display: flex; 
+    // to put divs side by side
+    justify-content: space-between;
+    // to split divs on the opposite sides of the screen
+
+    h1 {
+        font-family: $body-fontfamily;
+        font-size: 1.5em;
+        // line-height: 1em: would use if there are two different typefaces and need them to line up
+        // margin: .5em 0 0 0 to adjust baseline in
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+// could put navigation under site-header for jades portfolio
+}
+
+// site footer
+.site-footer {
+    justify-content: center;
+    margin-top: 6em
+}
+
+// site nave
+.site-nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        // gets rid of bullets
+        display: flex; 
+        // li { display: inline-flex } works, nested under ul
+
+        a {
+            display: block;
+            padding: 1em;
+        }
+    }
+}
+
+// hero section
+.hero {
+    background-color: $color-hero-bg;
+    padding: 6em 1em;
+    // 6em = top/bottom, 1em = left/right
+    text-align: center;
+
+    p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
