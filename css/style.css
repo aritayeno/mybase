@@ -48,12 +48,28 @@ hr {
   border: 0;
   height: 1px;
   background: rgba(0, 0, 0, 0.15);
-  margin: 3em 0; }
+  margin: 4em 0; }
+
+/* HELPER */
+.sectionhead {
+  font-family: "acumin-pro", Helvetica, arial, sans-serif;
+  font-size: 1em;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  margin-bottom: 3em; }
+
+.meta {
+  display: block;
+  font-size: .7em;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0 0 2em 0; }
 
 /* TYPE SPECIMEN */
 .mainhead {
   font-size: 6em;
-  color: #ac6802;
+  color: #ac2700;
   margin-bottom: 0; }
 
 .subhead {
@@ -154,8 +170,9 @@ body {
   padding: 1em;
   text-align: center; }
 
-.site-header .site-footer {
-  background-color: #ac6802;
+/* site header and footer */
+.site-header, .site-footer {
+  background-color: #ac2700;
   padding: 1em;
   color: #fff;
   display: -webkit-box;
@@ -164,32 +181,41 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  .site-header .site-footer h1 {
+  .site-header h1, .site-footer h1 {
     font-family: "acumin-pro", Helvetica, arial, sans-serif;
-    font-size: 1.5em; }
-  .site-header .site-footer a {
+    font-size: 1.5em;
+    margin: .5em 0 0 0;
+    /* to adjust baseline with nav text */ }
+  .site-header a, .site-footer a {
     color: #fff;
     text-decoration: none; }
 
+/* site footer */
 .site-footer {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   margin-top: 6em; }
 
+/* site navigation */
 .site-nav ul {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .site-nav ul a {
-    display: block;
-    padding: 1em; }
 
+.site-nav a {
+  display: block;
+  padding: 1em; }
+
+section {
+  padding: 6em 0; }
+
+/* Hero Sections */
 .hero {
-  background-color: rgba(172, 104, 2, 0.2);
+  background-color: rgba(172, 39, 0, 0.2);
   padding: 6em 1em;
   text-align: center; }
   .hero p {
